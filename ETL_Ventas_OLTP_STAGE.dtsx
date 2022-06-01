@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="ETL_Ventas_OLTP_STAGE"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{2563B78A-8585-43FD-8342-EEDA253E870E}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{04372989-3860-4A88-91D1-528B7EE4CFC8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -21,7 +21,7 @@
       DTS:refId="Package\Cargar STG_Categoria"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
-      DTS:DTSID="{2D14EF02-A207-49EF-9A58-B23ADC3B6796}"
+      DTS:DTSID="{46F0A939-0D0C-4697-A1D1-4BCC956F3673}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Cargar STG_Categoria"
@@ -32,11 +32,11 @@
           version="1">
           <components>
             <component
-              refId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria"
+              refId="Package\Cargar STG_Categoria\Destino de OLE DB"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
-              name="Destino de OLE DB - STG_Categoria"
+              name="Destino de OLE DB"
               usesDispositions="true"
               version="4">
               <properties>
@@ -89,7 +89,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Connections[OleDbConnection]"
+                  refId="Package\Cargar STG_Categoria\Destino de OLE DB.Connections[OleDbConnection]"
                   connectionManagerID="{7B14B2C9-EAFB-4485-A27D-A14900CA516B}:external"
                   connectionManagerRefId="Project.ConnectionManagers[(localdb)_Servidor.BDVentas_STAGE]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -97,64 +97,64 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Cargar STG_Categoria\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Inputs[Entrada de destino de OLE DB].Columns[cod_categoria]"
+                      refId="Package\Cargar STG_Categoria\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[cod_categoria]"
                       cachedDataType="wstr"
                       cachedLength="4"
                       cachedName="cod_categoria"
-                      externalMetadataColumnId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Inputs[Entrada de destino de OLE DB].ExternalColumns[cod_categoria]"
-                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano].Columns[cod_categoria]" />
+                      externalMetadataColumnId="Package\Cargar STG_Categoria\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[cod_categoria]"
+                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[cod_categoria]" />
                     <inputColumn
-                      refId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Inputs[Entrada de destino de OLE DB].Columns[nom_categoria]"
+                      refId="Package\Cargar STG_Categoria\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[nom_categoria]"
                       cachedDataType="wstr"
-                      cachedLength="20"
+                      cachedLength="50"
                       cachedName="nom_categoria"
-                      externalMetadataColumnId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Inputs[Entrada de destino de OLE DB].ExternalColumns[nom_categoria]"
-                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano].Columns[nom_categoria]" />
+                      externalMetadataColumnId="Package\Cargar STG_Categoria\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[nom_categoria]"
+                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[nom_categoria]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Inputs[Entrada de destino de OLE DB].ExternalColumns[sk_categoria]"
+                      refId="Package\Cargar STG_Categoria\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[sk_categoria]"
                       dataType="i4"
                       name="sk_categoria" />
                     <externalMetadataColumn
-                      refId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Inputs[Entrada de destino de OLE DB].ExternalColumns[cod_categoria]"
+                      refId="Package\Cargar STG_Categoria\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[cod_categoria]"
                       dataType="wstr"
                       length="4"
                       name="cod_categoria" />
                     <externalMetadataColumn
-                      refId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Inputs[Entrada de destino de OLE DB].ExternalColumns[nom_categoria]"
+                      refId="Package\Cargar STG_Categoria\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[nom_categoria]"
                       dataType="wstr"
-                      length="20"
+                      length="50"
                       name="nom_categoria" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Cargar STG_Categoria\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Cargar STG_Categoria\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Cargar STG_Categoria\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Cargar STG_Categoria\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Cargar STG_Categoria\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Cargar STG_Categoria\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -163,12 +163,12 @@
               </outputs>
             </component>
             <component
-              refId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto"
+              refId="Package\Cargar STG_Categoria\Origen de archivo plano"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
               description="Origen de archivo plano"
               localeId="3082"
-              name="Origen de archivo plano - Leer Categoria_Producto"
+              name="Origen de archivo plano"
               usesDispositions="true"
               version="1">
               <properties>
@@ -183,24 +183,24 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Connections[FlatFileConnection]"
-                  connectionManagerID="{1CCB37F3-BC64-4C1A-B815-0804FB64098F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Fuente Datos Archivo Plano]"
+                  refId="Package\Cargar STG_Categoria\Origen de archivo plano.Connections[FlatFileConnection]"
+                  connectionManagerID="{A75D8D8A-032E-471C-80E0-4F9E4AD306DE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Fuente Datos Archivo plano]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano]"
+                  refId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano]"
                   name="Salida de origen de archivo plano">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano].Columns[cod_categoria]"
+                      refId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[cod_categoria]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano].ExternalColumns[cod_categoria]"
+                      externalMetadataColumnId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[cod_categoria]"
                       length="4"
-                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano].Columns[cod_categoria]"
+                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[cod_categoria]"
                       name="cod_categoria"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -215,13 +215,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano].Columns[nom_categoria]"
+                      refId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[nom_categoria]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano].ExternalColumns[nom_categoria]"
-                      length="20"
-                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano].Columns[nom_categoria]"
+                      externalMetadataColumnId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[nom_categoria]"
+                      length="50"
+                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[nom_categoria]"
                       name="nom_categoria"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -239,39 +239,39 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano].ExternalColumns[cod_categoria]"
+                      refId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[cod_categoria]"
                       dataType="wstr"
                       length="4"
                       name="cod_categoria" />
                     <externalMetadataColumn
-                      refId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano].ExternalColumns[nom_categoria]"
+                      refId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[nom_categoria]"
                       dataType="wstr"
-                      length="20"
+                      length="50"
                       name="nom_categoria" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de error de origen de archivo plano]"
+                  refId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano]"
                   isErrorOut="true"
                   name="Salida de error de origen de archivo plano">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      refId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                       codePage="1252"
                       dataType="text"
                       description="Columna de salida de error de origen de archivo plano"
-                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                       name="Columna de salida de error de origen de archivo plano" />
                     <outputColumn
-                      refId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      refId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      refId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      lineageId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -283,9 +283,9 @@
           <paths>
             <path
               refId="Package\Cargar STG_Categoria.Paths[Salida de origen de archivo plano]"
-              endId="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria.Inputs[Entrada de destino de OLE DB]"
+              endId="Package\Cargar STG_Categoria\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
               name="Salida de origen de archivo plano"
-              startId="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto.Outputs[Salida de origen de archivo plano]" />
+              startId="Package\Cargar STG_Categoria\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1310,7 +1310,7 @@ where [refTable].[cod_categoria] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indica si se debe hacer referencia a metadatos en formato XML."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="sk_categoria" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="cod_categoria" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="nom_categoria" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="sk_categoria" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="cod_categoria" dataType="DT_WSTR" length="4" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="nom_categoria" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
@@ -1510,12 +1510,6 @@ where [refTable].[cod_categoria] = ?</property>
                       cachedName="cod_categoria"
                       externalMetadataColumnId="Package\Cargar STG_Producto\Destino de OLE DB - Cargar STG_Producto.Inputs[Entrada de destino de OLE DB].ExternalColumns[cod_categoria]"
                       lineageId="Package\Cargar STG_Producto\Origen de OLE DB - Leer OTLP_Producto.Outputs[Salida de origen de OLE DB].Columns[cod_categoria]" />
-                    <inputColumn
-                      refId="Package\Cargar STG_Producto\Destino de OLE DB - Cargar STG_Producto.Inputs[Entrada de destino de OLE DB].Columns[sk_categoria]"
-                      cachedDataType="i4"
-                      cachedName="sk_categoria"
-                      externalMetadataColumnId="Package\Cargar STG_Producto\Destino de OLE DB - Cargar STG_Producto.Inputs[Entrada de destino de OLE DB].ExternalColumns[sk_categoria]"
-                      lineageId="Package\Cargar STG_Producto\Búsqueda - Obtener Sk_Categoria.Outputs[Salida de entradas coincidentes de búsqueda].Columns[sk_categoria]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1538,10 +1532,6 @@ where [refTable].[cod_categoria] = ?</property>
                       dataType="wstr"
                       length="4"
                       name="cod_categoria" />
-                    <externalMetadataColumn
-                      refId="Package\Cargar STG_Producto\Destino de OLE DB - Cargar STG_Producto.Inputs[Entrada de destino de OLE DB].ExternalColumns[sk_categoria]"
-                      dataType="i4"
-                      name="sk_categoria" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -3852,24 +3842,24 @@ where [refTable].[cod_sucursal] = ?</property>
               startId="Package\Tarea Flujo de datos\Conversión de datos.Outputs[Salida de conversión de datos]" />
             <path
               refId="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda]"
-              endId="Package\Tarea Flujo de datos\Búsqueda - Sk_Cliente.Inputs[Entrada de búsqueda]"
+              endId="Package\Tarea Flujo de datos\Búsqueda - Sk_Producto.Inputs[Entrada de búsqueda]"
               name="Salida de entradas coincidentes de búsqueda"
-              startId="Package\Tarea Flujo de datos\Búsqueda - Sk_Sucursal.Outputs[Salida de entradas coincidentes de búsqueda]" />
+              startId="Package\Tarea Flujo de datos\Búsqueda - Sk_Fecha.Outputs[Salida de entradas coincidentes de búsqueda]" />
             <path
               refId="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda1]"
-              endId="Package\Tarea Flujo de datos\Búsqueda - Sk_Empleado.Inputs[Entrada de búsqueda]"
-              name="Salida de entradas coincidentes de búsqueda"
-              startId="Package\Tarea Flujo de datos\Búsqueda - Sk_Cliente.Outputs[Salida de entradas coincidentes de búsqueda]" />
-            <path
-              refId="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda2]"
               endId="Package\Tarea Flujo de datos\Búsqueda - Sk_Fecha.Inputs[Entrada de búsqueda]"
               name="Salida de entradas coincidentes de búsqueda"
               startId="Package\Tarea Flujo de datos\Búsqueda - Sk_Empleado.Outputs[Salida de entradas coincidentes de búsqueda]" />
             <path
-              refId="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda3]"
-              endId="Package\Tarea Flujo de datos\Búsqueda - Sk_Producto.Inputs[Entrada de búsqueda]"
+              refId="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda2]"
+              endId="Package\Tarea Flujo de datos\Búsqueda - Sk_Empleado.Inputs[Entrada de búsqueda]"
               name="Salida de entradas coincidentes de búsqueda"
-              startId="Package\Tarea Flujo de datos\Búsqueda - Sk_Fecha.Outputs[Salida de entradas coincidentes de búsqueda]" />
+              startId="Package\Tarea Flujo de datos\Búsqueda - Sk_Cliente.Outputs[Salida de entradas coincidentes de búsqueda]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda3]"
+              endId="Package\Tarea Flujo de datos\Búsqueda - Sk_Cliente.Inputs[Entrada de búsqueda]"
+              name="Salida de entradas coincidentes de búsqueda"
+              startId="Package\Tarea Flujo de datos\Búsqueda - Sk_Sucursal.Outputs[Salida de entradas coincidentes de búsqueda]" />
             <path
               refId="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda4]"
               endId="Package\Tarea Flujo de datos\Destino de OLE DB - STG_RegistroVentas.Inputs[Entrada de destino de OLE DB]"
@@ -3913,7 +3903,7 @@ where [refTable].[cod_sucursal] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
       DTS:CreationName=""
-      DTS:DTSID="{54CCDF96-E1E3-4E7F-AE22-02CBD1D589E4}"
+      DTS:DTSID="{E4313757-70E0-4749-8B33-D5B701E3E4BB}"
       DTS:From="Package\Tarea Ejecutar SQL"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 2"
@@ -3921,7 +3911,7 @@ where [refTable].[cod_sucursal] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
       DTS:CreationName=""
-      DTS:DTSID="{715193EA-635C-4DBF-9204-D091C7871F03}"
+      DTS:DTSID="{930208D6-855F-4654-8936-662ABD29AE6D}"
       DTS:From="Package\Cargar STG_Categoria"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 3"
@@ -3988,17 +3978,33 @@ where [refTable].[cod_sucursal] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="177.6,41.6"
-          Id="Package\Cargar STG_Sucursal"
-          TopLeft="28.5714290579972,124.647060571657" />
+          Size="170.4,41.6"
+          Id="Package\Cargar STG_Cliente"
+          TopLeft="639.285725172685,120.058825213191" />
         <NodeLayout
           Size="184,41.6"
           Id="Package\Cargar STG_Emlpeado"
           TopLeft="222.142860925928,120.823531106269" />
         <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Cargar STG_Fechas"
+          TopLeft="836.734708127058,119.075631922092" />
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\Cargar STG_Producto"
+          TopLeft="439.285721766705,214.011766282415" />
+        <NodeLayout
+          Size="177.6,41.6"
+          Id="Package\Cargar STG_Sucursal"
+          TopLeft="28.5714290579972,124.647060571657" />
+        <NodeLayout
           Size="169.6,41.6"
           Id="Package\Tarea Ejecutar SQL"
           TopLeft="451.632660752483,6.11764714462123" />
+        <NodeLayout
+          Size="216.8,41.6"
+          Id="Package\Tarea Flujo de datos"
+          TopLeft="426.530619508671,353.949584795942" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
           TopLeft="482.565994085816,47.7176471446212">
@@ -4067,28 +4073,32 @@ where [refTable].[cod_sucursal] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="182.4,41.6"
-          Id="Package\Cargar STG_Categoria"
-          TopLeft="437.857150313806,120.058825213191" />
-        <NodeLayout
-          Size="180,41.6"
-          Id="Package\Cargar STG_Producto"
-          TopLeft="439.285721766705,214.011766282415" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="532.744905533144,47.7176471446212">
+          Id="Package.PrecedenceConstraints[Restricción 10]"
+          TopLeft="921.934708127058,160.675631922092">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,72.3411780685701"
+              EndConnector="-317.404088618387,193.27395287385"
               Start="0,0"
-              End="0,64.8411780685701">
+              End="-317.404088618387,185.77395287385">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,64.8411780685701" />
+                    End="0,138.329459860906" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,138.329459860906"
+                    Point2="0,142.329459860906"
+                    Point3="-4,142.329459860906" />
+                  <mssgle:LineSegment
+                    End="-313.404088618387,142.329459860906" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-313.404088618387,142.329459860906"
+                    Point2="-317.404088618387,142.329459860906"
+                    Point3="-317.404088618387,146.329459860906" />
+                  <mssgle:LineSegment
+                    End="-317.404088618387,185.77395287385" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4097,32 +4107,6 @@ where [refTable].[cod_sucursal] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="529.171436040255,161.658825213191">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52.3529410692236"
-              Start="0,0"
-              End="0,44.8529410692236">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,44.8529410692236" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Cargar STG_Cliente"
-          TopLeft="639.285725172685,120.058825213191" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 4]"
           TopLeft="563.365994085816,47.7176471446212">
@@ -4157,10 +4141,6 @@ where [refTable].[cod_sucursal] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Cargar STG_Fechas"
-          TopLeft="836.734708127058,119.075631922092" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 5]"
           TopLeft="590.29932741915,47.7176471446212">
@@ -4195,44 +4175,6 @@ where [refTable].[cod_sucursal] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="216.8,41.6"
-          Id="Package\Tarea Flujo de datos"
-          TopLeft="426.530619508671,353.949584795942" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 7]"
-          TopLeft="314.142860925928,162.423531106269">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="185.987758582744,191.526053689673"
-              Start="0,0"
-              End="185.987758582744,184.026053689673">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,110.073759450333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,110.073759450333"
-                    Point2="0,114.073759450333"
-                    Point3="4,114.073759450333" />
-                  <mssgle:LineSegment
-                    End="181.987758582744,114.073759450333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="181.987758582744,114.073759450333"
-                    Point2="185.987758582744,114.073759450333"
-                    Point3="185.987758582744,118.073759450333" />
-                  <mssgle:LineSegment
-                    End="185.987758582744,184.026053689673" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 6]"
           TopLeft="117.371429057997,166.247060571657">
@@ -4259,6 +4201,40 @@ where [refTable].[cod_sucursal] = ?</property>
                     Point3="347.959190450674,142.226587132557" />
                   <mssgle:LineSegment
                     End="347.959190450674,180.202524224285" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 7]"
+          TopLeft="314.142860925928,162.423531106269">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="185.987758582744,191.526053689673"
+              Start="0,0"
+              End="185.987758582744,184.026053689673">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,110.073759450333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,110.073759450333"
+                    Point2="0,114.073759450333"
+                    Point3="4,114.073759450333" />
+                  <mssgle:LineSegment
+                    End="181.987758582744,114.073759450333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="181.987758582744,114.073759450333"
+                    Point2="185.987758582744,114.073759450333"
+                    Point3="185.987758582744,118.073759450333" />
+                  <mssgle:LineSegment
+                    End="185.987758582744,184.026053689673" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4323,32 +4299,58 @@ where [refTable].[cod_sucursal] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="182.4,41.6"
+          Id="Package\Cargar STG_Categoria"
+          TopLeft="431.250007344144,125.220589991466" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 10]"
-          TopLeft="921.934708127058,160.675631922092">
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="536.432660752483,47.7176471446212">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-317.404088618387,193.27395287385"
+              EndConnector="-13.9826534083393,77.5029428468444"
               Start="0,0"
-              End="-317.404088618387,185.77395287385">
+              End="-13.9826534083393,70.0029428468444">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,138.329459860906" />
+                    End="0,34.7514714234222" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,138.329459860906"
-                    Point2="0,142.329459860906"
-                    Point3="-4,142.329459860906" />
+                    Point1="0,34.7514714234222"
+                    Point2="0,38.7514714234222"
+                    Point3="-4,38.7514714234222" />
                   <mssgle:LineSegment
-                    End="-313.404088618387,142.329459860906" />
+                    End="-9.98265340833927,38.7514714234222" />
                   <mssgle:CubicBezierSegment
-                    Point1="-313.404088618387,142.329459860906"
-                    Point2="-317.404088618387,142.329459860906"
-                    Point3="-317.404088618387,146.329459860906" />
+                    Point1="-9.98265340833927,38.7514714234222"
+                    Point2="-13.9826534083393,38.7514714234222"
+                    Point3="-13.9826534083393,42.7514714234222" />
                   <mssgle:LineSegment
-                    End="-317.404088618387,185.77395287385" />
+                    End="-13.9826534083393,70.0029428468444" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="525.867864555424,166.820589991466">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47.1911762909493"
+              Start="0,0"
+              End="0,39.6911762909493">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.6911762909493" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4361,10 +4363,257 @@ where [refTable].[cod_sucursal] = ?</property>
     </LayoutInfo>
   </Package>
   <TaskHost
+    design-time-name="Package\Cargar STG_Cliente">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="260.8,41.6"
+          Id="Package\Cargar STG_Cliente\Origen de OLE DB - Leer OLTP_Cliente"
+          TopLeft="438,72" />
+        <NodeLayout
+          Size="269.6,41.6"
+          Id="Package\Cargar STG_Cliente\Destino de OLE DB - Cargar STG_Cliente"
+          TopLeft="430,194" />
+        <EdgeLayout
+          Id="Package\Cargar STG_Cliente.Paths[Salida de origen de OLE DB]"
+          TopLeft="566.6,113.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,80.4000000000001"
+              Start="0,0"
+              End="0,72.9000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,72.9000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargar STG_Cliente\Destino de OLE DB - Cargar STG_Cliente">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargar STG_Cliente\Origen de OLE DB - Leer OLTP_Cliente">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Cargar STG_Emlpeado">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="274.4,41.6"
+          Id="Package\Cargar STG_Emlpeado\Origen de OLE DB - Leer OLTP_Empleado"
+          TopLeft="309.333333333333,58.6666666666667" />
+        <NodeLayout
+          Size="296,41.6"
+          Id="Package\Cargar STG_Emlpeado\Destino de OLE DB - Cargar STAGE_Empleado"
+          TopLeft="291.833333333333,179.333333333333" />
+        <EdgeLayout
+          Id="Package\Cargar STG_Emlpeado.Paths[Salida de origen de OLE DB]"
+          TopLeft="443.183333333333,100.266666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,79.0666666666667"
+              Start="0,0"
+              End="0,71.5666666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.5666666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargar STG_Emlpeado\Destino de OLE DB - Cargar STAGE_Empleado">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargar STG_Emlpeado\Origen de OLE DB - Leer OLTP_Empleado">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Cargar STG_Producto">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="279.2,41.6"
+          Id="Package\Cargar STG_Producto\Destino de OLE DB - Cargar STG_Producto"
+          TopLeft="444,250" />
+        <NodeLayout
+          Size="270.4,41.6"
+          Id="Package\Cargar STG_Producto\Origen de OLE DB - Leer OTLP_Producto"
+          TopLeft="455,40" />
+        <NodeLayout
+          Size="238.4,41.6"
+          Id="Package\Cargar STG_Producto\Búsqueda - Obtener Sk_Categoria"
+          TopLeft="469,144" />
+        <EdgeLayout
+          Id="Package\Cargar STG_Producto.Paths[Salida de origen de OLE DB]"
+          TopLeft="589.2,81.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62.4"
+              Start="0,0"
+              End="0,54.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargar STG_Producto.Paths[Salida de entradas coincidentes de búsqueda]"
+          TopLeft="585.9,185.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64.4"
+              Start="0,0"
+              End="0,56.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-99.8190234375,22.35234375,199.638046875,12.1953125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargar STG_Producto\Destino de OLE DB - Cargar STG_Producto">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargar STG_Producto\Origen de OLE DB - Leer OTLP_Producto">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargar STG_Producto\Búsqueda - Obtener Sk_Categoria">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[STG_Categoria]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Cargar STG_Sucursal">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="268,41.6"
           Id="Package\Cargar STG_Sucursal\Origen de OLE DB - Leer OLTP_Sucursal"
@@ -4404,25 +4653,14 @@ where [refTable].[cod_sucursal] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Cargar STG_Sucursal\Origen de OLE DB - Leer OLTP_Sucursal">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Cargar STG_Sucursal\Destino de OLE DB - Cargar STAGE_Sucursal">
     <Properties>
@@ -4436,276 +4674,8 @@ where [refTable].[cod_sucursal] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Cargar STG_Emlpeado">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="296,41.6"
-          Id="Package\Cargar STG_Emlpeado\Destino de OLE DB - Cargar STAGE_Empleado"
-          TopLeft="291.833333333333,179.333333333333" />
-        <NodeLayout
-          Size="274.4,41.6"
-          Id="Package\Cargar STG_Emlpeado\Origen de OLE DB - Leer OLTP_Empleado"
-          TopLeft="309.333333333333,58.6666666666667" />
-        <EdgeLayout
-          Id="Package\Cargar STG_Emlpeado.Paths[Salida de origen de OLE DB]"
-          TopLeft="443.183333333333,100.266666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,79.0666666666667"
-              Start="0,0"
-              End="0,71.5666666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,71.5666666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Cargar STG_Emlpeado\Destino de OLE DB - Cargar STAGE_Empleado">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Cargar STG_Emlpeado\Origen de OLE DB - Leer OLTP_Empleado">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Cargar STG_Categoria">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="316.8,41.6"
-          Id="Package\Cargar STG_Categoria\Origen de archivo plano - Leer Categoria_Producto"
-          TopLeft="326.923076923077,68.4615384615385" />
-        <NodeLayout
-          Size="248,41.6"
-          Id="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria"
-          TopLeft="368.461538461538,165.384615384615" />
-        <EdgeLayout
-          Id="Package\Cargar STG_Categoria.Paths[Salida de origen de archivo plano]"
-          TopLeft="488.892307692308,110.061538461539">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55.3230769230769"
-              Start="0,0"
-              End="0,47.8230769230769">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.8230769230769" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Cargar STG_Producto">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="270.4,41.6"
-          Id="Package\Cargar STG_Producto\Origen de OLE DB - Leer OTLP_Producto"
-          TopLeft="455,40" />
-        <NodeLayout
-          Size="238.4,41.6"
-          Id="Package\Cargar STG_Producto\Búsqueda - Obtener Sk_Categoria"
-          TopLeft="469,144" />
-        <EdgeLayout
-          Id="Package\Cargar STG_Producto.Paths[Salida de origen de OLE DB]"
-          TopLeft="589.2,81.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,62.4"
-              Start="0,0"
-              End="0,54.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="279.2,41.6"
-          Id="Package\Cargar STG_Producto\Destino de OLE DB - Cargar STG_Producto"
-          TopLeft="444,250" />
-        <EdgeLayout
-          Id="Package\Cargar STG_Producto.Paths[Salida de entradas coincidentes de búsqueda]"
-          TopLeft="585.9,185.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,64.4"
-              Start="0,0"
-              End="0,56.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,56.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-99.8190234375,22.35234375,199.638046875,12.1953125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Cargar STG_Producto\Origen de OLE DB - Leer OTLP_Producto">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Cargar STG_Producto\Búsqueda - Obtener Sk_Categoria">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[STG_Categoria]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Cargar STG_Producto\Destino de OLE DB - Cargar STG_Producto">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Cargar STG_Cliente">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="260.8,41.6"
-          Id="Package\Cargar STG_Cliente\Origen de OLE DB - Leer OLTP_Cliente"
-          TopLeft="438,72" />
-        <NodeLayout
-          Size="269.6,41.6"
-          Id="Package\Cargar STG_Cliente\Destino de OLE DB - Cargar STG_Cliente"
-          TopLeft="430,194" />
-        <EdgeLayout
-          Id="Package\Cargar STG_Cliente.Paths[Salida de origen de OLE DB]"
-          TopLeft="566.6,113.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,80.4000000000001"
-              Start="0,0"
-              End="0,72.9000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,72.9000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Cargar STG_Cliente\Origen de OLE DB - Leer OLTP_Cliente">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Cargar STG_Cliente\Destino de OLE DB - Cargar STG_Cliente">
+    design-time-name="Package\Cargar STG_Sucursal\Origen de OLE DB - Leer OLTP_Sucursal">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4723,85 +4693,31 @@ where [refTable].[cod_sucursal] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="152,41.6"
-          Id="Package\Tarea Flujo de datos\Origen de Excel"
-          TopLeft="142,233" />
-        <NodeLayout
           Size="163.2,41.6"
           Id="Package\Tarea Flujo de datos\Columna derivada"
-          TopLeft="129,18" />
+          TopLeft="45,114" />
         <NodeLayout
-          Size="191.2,41.6"
-          Id="Package\Tarea Flujo de datos\Búsqueda - Sk_Sucursal"
-          TopLeft="359,12" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de columna derivada]"
-          TopLeft="292.2,35.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="66.8,0"
-              Start="0,0"
-              End="59.3,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="59.3,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="184,41.6"
-          Id="Package\Tarea Flujo de datos\Búsqueda - Sk_Cliente"
-          TopLeft="613,15" />
-        <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda]"
-          TopLeft="550.2,34.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="62.8000000000004,0"
-              Start="0,0"
-              End="55.3000000000004,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="55.3000000000004,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-72.1690234374998,5,199.638046875,12.1953125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="152,41.6"
+          Id="Package\Tarea Flujo de datos\Origen de Excel"
+          TopLeft="39,292" />
         <NodeLayout
           Size="174.4,41.6"
           Id="Package\Tarea Flujo de datos\Conversión de datos"
-          TopLeft="132,107" />
+          TopLeft="35,204" />
         <EdgeLayout
           Id="Package\Tarea Flujo de datos.Paths[Salida de origen de Excel]"
-          TopLeft="218.6,233">
+          TopLeft="118.6,292">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-84.4000000000001"
+              EndConnector="0,-46.4"
               Start="0,0"
-              End="0,-76.9000000000001">
+              End="0,-38.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-76.9000000000001" />
+                    End="0,-38.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4812,30 +4728,18 @@ where [refTable].[cod_sucursal] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Tarea Flujo de datos.Paths[Salida de conversión de datos]"
-          TopLeft="219.2,107">
+          TopLeft="124.4,204">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-8.59999999999994,-47.4"
+              EndConnector="0,-48.4"
               Start="0,0"
-              End="-8.59999999999994,-39.9">
+              End="0,-40.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-19.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-19.7"
-                    Point2="0,-23.7"
-                    Point3="-4,-23.7" />
-                  <mssgle:LineSegment
-                    End="-4.59999999999994,-23.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.59999999999994,-23.7"
-                    Point2="-8.59999999999994,-23.7"
-                    Point3="-8.59999999999994,-27.7" />
-                  <mssgle:LineSegment
-                    End="-8.59999999999994,-39.9" />
+                    End="0,-40.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4845,39 +4749,55 @@ where [refTable].[cod_sucursal] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="198.4,41.6"
-          Id="Package\Tarea Flujo de datos\Búsqueda - Sk_Empleado"
-          TopLeft="840,15" />
+          Size="193.6,41.6"
+          Id="Package\Tarea Flujo de datos\Búsqueda - Sk_Producto"
+          TopLeft="882,166" />
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\Tarea Flujo de datos\Búsqueda - Sk_Fecha"
+          TopLeft="660,104" />
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda1]"
-          TopLeft="797,35.8">
+          Id="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda]"
+          TopLeft="840,124.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="42.9999999999999,0"
+              EndConnector="42.0000000000001,62"
               Start="0,0"
-              End="35.4999999999999,0">
+              End="34.5000000000001,62">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="35.4999999999999,0" />
+                    End="17.0000000000001,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.0000000000001,0"
+                    Point2="21.0000000000001,0"
+                    Point3="21.0000000000001,4" />
+                  <mssgle:LineSegment
+                    End="21.0000000000001,58" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.0000000000001,58"
+                    Point2="21.0000000000001,62"
+                    Point3="25.0000000000001,62" />
+                  <mssgle:LineSegment
+                    End="34.5000000000001,62" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-82.0690234375001,5,199.638046875,12.1953125"
+              BoundingBox="-78.8190234375,-18.1953125,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="180,41.6"
-          Id="Package\Tarea Flujo de datos\Búsqueda - Sk_Fecha"
-          TopLeft="660,104" />
+          Size="198.4,41.6"
+          Id="Package\Tarea Flujo de datos\Búsqueda - Sk_Empleado"
+          TopLeft="840,15" />
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda2]"
+          Id="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda1]"
           TopLeft="939.2,56.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4913,82 +4833,156 @@ where [refTable].[cod_sucursal] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="193.6,41.6"
-          Id="Package\Tarea Flujo de datos\Búsqueda - Sk_Producto"
-          TopLeft="897,165" />
+          Size="184,41.6"
+          Id="Package\Tarea Flujo de datos\Búsqueda - Sk_Cliente"
+          TopLeft="466,26" />
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda3]"
-          TopLeft="840,124.8">
+          Id="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda2]"
+          TopLeft="650,46.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="56.9999999999999,61"
+              EndConnector="190,-11"
               Start="0,0"
-              End="49.4999999999999,61">
+              End="182.5,-11">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="24.4999999999999,0" />
+                    End="91,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="24.4999999999999,0"
-                    Point2="28.4999999999999,0"
-                    Point3="28.4999999999999,4" />
+                    Point1="91,0"
+                    Point2="95,0"
+                    Point3="95,-4" />
                   <mssgle:LineSegment
-                    End="28.4999999999999,57" />
+                    End="95,-7.00000000000001" />
                   <mssgle:CubicBezierSegment
-                    Point1="28.4999999999999,57"
-                    Point2="28.4999999999999,61"
-                    Point3="32.4999999999999,61" />
+                    Point1="95,-7.00000000000001"
+                    Point2="95,-11"
+                    Point3="99,-11" />
                   <mssgle:LineSegment
-                    End="49.4999999999999,61" />
+                    End="182.5,-11" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-71.3190234375001,-18.1953125,199.638046875,12.1953125"
+              BoundingBox="-4.81902343750001,1,199.638046875,12.1953125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="191.2,41.6"
+          Id="Package\Tarea Flujo de datos\Búsqueda - Sk_Sucursal"
+          TopLeft="282,105" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda3]"
+          TopLeft="377.6,105">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="180.4,-37.4"
+              Start="0,0"
+              End="180.4,-29.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-14.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-14.7"
+                    Point2="0,-18.7"
+                    Point3="4,-18.7" />
+                  <mssgle:LineSegment
+                    End="176.4,-18.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="176.4,-18.7"
+                    Point2="180.4,-18.7"
+                    Point3="180.4,-22.7" />
+                  <mssgle:LineSegment
+                    End="180.4,-29.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-9.61902343750002,-13.7,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
           Size="273.6,41.6"
           Id="Package\Tarea Flujo de datos\Destino de OLE DB - STG_RegistroVentas"
-          TopLeft="817,278" />
+          TopLeft="611,260" />
         <EdgeLayout
-          Id="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda4]"
-          TopLeft="993.8,206.6">
+          Id="Package\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+          TopLeft="208.2,134.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-39.9999999999998,71.4"
+              EndConnector="73.8,-9"
               Start="0,0"
-              End="-39.9999999999998,63.9">
+              End="66.3,-9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.7" />
+                    End="32.9,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31.7"
-                    Point2="0,35.7"
-                    Point3="-4,35.7" />
+                    Point1="32.9,0"
+                    Point2="36.9,0"
+                    Point3="36.9,-4" />
                   <mssgle:LineSegment
-                    End="-35.9999999999998,35.7" />
+                    End="36.9,-5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-35.9999999999998,35.7"
-                    Point2="-39.9999999999998,35.7"
-                    Point3="-39.9999999999998,39.7" />
+                    Point1="36.9,-5"
+                    Point2="36.9,-9"
+                    Point3="40.9,-9" />
                   <mssgle:LineSegment
-                    End="-39.9999999999998,63.9" />
+                    End="66.3,-9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de entradas coincidentes de búsqueda4]"
+          TopLeft="978.8,207.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-231,52.4"
+              Start="0,0"
+              End="-231,44.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.2"
+                    Point2="0,26.2"
+                    Point3="-4,26.2" />
+                  <mssgle:LineSegment
+                    End="-227,26.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-227,26.2"
+                    Point2="-231,26.2"
+                    Point3="-231,30.2" />
+                  <mssgle:LineSegment
+                    End="-231,44.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-119.8190234375,40.7,199.638046875,12.1953125"
+              BoundingBox="-215.3190234375,31.2,199.638046875,12.1953125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -5008,136 +5002,46 @@ where [refTable].[cod_sucursal] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Cargar STG_Categoria">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\Cargar STG_Categoria\Destino de OLE DB"
+          TopLeft="336.428577157916,132.294119502434" />
+        <NodeLayout
+          Size="190.4,41.6"
+          Id="Package\Cargar STG_Categoria\Origen de archivo plano"
+          TopLeft="330.000005619867,35.176471081572" />
+        <EdgeLayout
+          Id="Package\Cargar STG_Categoria.Paths[Salida de origen de archivo plano]"
+          TopLeft="422.814291388891,76.776471081572">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.5176484208619"
+              Start="0,0"
+              End="0,48.0176484208619">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.0176484208619" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Búsqueda - Sk_Sucursal">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[STG_Sucursal]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Búsqueda - Sk_Cliente">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[STG_Cliente]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Búsqueda - Sk_Empleado">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[STG_Empleado]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Búsqueda - Sk_Fecha">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[STG_Fechas]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Búsqueda - Sk_Producto">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[STG_Producto]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Tarea Flujo de datos\Destino de OLE DB - STG_RegistroVentas">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Cargar STG_Categoria\Destino de OLE DB - STG_Categoria">
+    design-time-name="Package\Cargar STG_Categoria\Destino de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

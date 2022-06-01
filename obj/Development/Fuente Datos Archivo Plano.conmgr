@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="Fuente Datos Archivo Plano"
-  DTS:DTSID="{1CCB37F3-BC64-4C1A-B815-0804FB64098F}"
+  DTS:ObjectName="Fuente Datos Archivo plano"
+  DTS:DTSID="{A75D8D8A-032E-471C-80E0-4F9E4AD306DE}"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>
     <DTS:ConnectionManager
@@ -12,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x0022_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="C:\Users\Enzo Hinostroza\Desktop\categoria_producto.txt">
+      DTS:ConnectionString="C:\Users\Enzo Hinostroza\Desktop\FUNDA inteligencia de negocios\categoria_producto.txt">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -21,16 +21,16 @@
           DTS:DataType="130"
           DTS:TextQualified="True"
           DTS:ObjectName="cod_categoria"
-          DTS:DTSID="{FB6D98ED-FABF-468D-AA94-3A93FF2F0D07}"
+          DTS:DTSID="{D5746FDD-10BF-42A3-87FC-C466A04BFA71}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
           DTS:ColumnDelimiter="_x000D__x000A_"
-          DTS:MaximumWidth="20"
+          DTS:MaximumWidth="50"
           DTS:DataType="130"
           DTS:TextQualified="True"
           DTS:ObjectName="nom_categoria"
-          DTS:DTSID="{B28D069B-420E-4E59-907F-848C63927CDF}"
+          DTS:DTSID="{9FE81966-1DC7-4AB2-BC8D-8B81AD129982}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

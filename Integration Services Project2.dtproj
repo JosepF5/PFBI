@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-N9HSC28</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMlTNVx2FwUKjcQtKQwYrLAAAAAACAAAAAAAQZgAAAAEAACAAAACb756kR17HMWMDyEoBQ7HGDzVjz+LS+IXEnyX5AvwkLgAAAAAOgAAAAAIAACAAAAAxuGkzvVXJl6KBhW6kWrtQeGzvPKIMTSHQBEtn12jYNpAAAAAm2HQCl934GZmLPMw/Ty2cbJzzYCbo4hjIbZVyZ42bihA27ogMgtaeN+OU4p3FCkG56IWmFu/WVMhJOR9FqGPGcuFOykT6YcqEUlX8pGwMH25vvKQwahDo+UEKVkJLgx9VX07TFvjt119GCtEQ6JtAGOlJZjMXhog/yA2LtbQnn7oA0yw1Cox6LutrfT7j+pZAAAAAZjF5IBmw+U7gaXxN1qBMqqpcLOe3iT8nxQDLepgG9HpTzKUPIl1DC+wVureZ9HL0zQyqHtJZ2XpdNJ6lqu7H/A==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMlTNVx2FwUKjcQtKQwYrLAAAAAACAAAAAAAQZgAAAAEAACAAAAALRSeyvqEV3F0k+rQj7U7F3xrsPnP43JfQbHKiowSrrAAAAAAOgAAAAAIAACAAAAA4RRfmsFAVbEPbjX4yrrmOFHN38zqgy6wl3Xu68ZSYfpAAAABqA6ZgEWgqq315OnFs+qQs+gPF3/8PRPaq+ngPvYjALzbCXOxLBeN9wghUqNkqbKq3p9thB/KiQmIZP/NrJ5QNoOuoMLTVo+UBtBKUGcuCmT1OGMeseNXrleHj+RkTWMOSo5zqbhhZyBD/2E5hyl7N/qgnZ3Jj9aZwFh5Wtz+Hi6eq9ncMldUpyqdpUK1l8aJAAAAAFF7Q4VpaxBDyjJECa+X5g05q8F+LWvJkrNiqWkq7KQ7e05Rzxo1RyiBp+5tupf3UWpRepWAuIFMyDA5LXZ1hQQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -38,7 +38,7 @@
           <SSIS:ConnectionManager SSIS:Name="(localdb)_Servidor.BDVentas_STAGE.conmgr" />
           <SSIS:ConnectionManager SSIS:Name="(localdb)_Servidor.BDVentas_MART.conmgr" />
           <SSIS:ConnectionManager SSIS:Name="Fuente Datos Registro Ventas.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="Fuente Datos Archivo Plano.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="Fuente Datos Archivo plano.conmgr" />
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
@@ -618,7 +618,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.AlwaysCheckForRowDelimiters">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.AlwaysCheckForRowDelimiters">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -633,7 +633,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.CodePage">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.CodePage">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -648,7 +648,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.ColumnNamesInFirstDataRow">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.ColumnNamesInFirstDataRow">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -663,7 +663,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.ConnectByProxy">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.ConnectByProxy">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -678,7 +678,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -689,11 +689,11 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\Enzo Hinostroza\Desktop\categoria_producto.txt</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">C:\Users\Enzo Hinostroza\Desktop\FUNDA inteligencia de negocios\categoria_producto.txt</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.DataRowsToSkip">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.DataRowsToSkip">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -708,7 +708,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.Format">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.Format">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -723,7 +723,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.HeaderRowDelimiter">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.HeaderRowDelimiter">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -739,7 +739,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.HeaderRowsToSkip">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.HeaderRowsToSkip">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -754,7 +754,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.LocaleID">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.LocaleID">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -769,7 +769,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.RowDelimiter">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.RowDelimiter">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -783,7 +783,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.TextQualifier">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.TextQualifier">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -798,7 +798,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo Plano.Unicode">
+            <SSIS:Parameter SSIS:Name="CM.Fuente Datos Archivo plano.Unicode">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -821,10 +821,10 @@
                 <SSIS:Property SSIS:Name="Name">ETL_Ventas_OLTP_STAGE</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{2563B78A-8585-43FD-8342-EEDA253E870E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{4A456C99-31A1-4B00-B0EC-A67051F9AB15}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
